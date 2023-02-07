@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .btn-grad {
+        background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+        margin: 10px;
+        padding: 15px 45px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        border: 3px dotted violet;
+        display: block;
+        width: calc(100% - 200px);
+      }
+
+      .btn-grad:hover {
+        background-position: right center;
+        /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn-grad" onclick="alert('Hallo Welt');">My Fancy Button</button>
+
+  </body>
+
+</html>
