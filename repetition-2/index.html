@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" />
+    <title>Repetition Flexbox</title>
+    <style>
+      :root {
+        /* verwenden mit var(--primary-color); */
+        --primary-color: #000090;
+      }
+
+      html {
+        font-size: 16px;
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        min-height: 100%;
+      }
+
+      header, footer, aside {
+        background-color: #ddd;
+      }
+
+      header {
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #brand {
+        height: 100%;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 0.4rem;
+        padding-right: 1rem;
+      }
+
+      nav ul a {
+        display: block;
+        color: var(--primary-color);
+        text-decoration: none;
+        border: 3px solid var(--primary-color);
+        padding: 0.5rem;
+        font-weight: bold;
+        transition: 2s cubic-bezier(.21,1.45,.77,-0.68);
+      }
+
+      nav ul a:hover {
+        color: #fff;
+        transform: scale(1.2) rotate(360deg) ;
+        background-color: var(--primary-color);
+      }
+
+      #wrapper {
+        flex-grow: 1;
+        display: flex;
+      }
+
+      main {
+        flex-grow: 1
+      }
+
+      aside {
+        width: 12rem;
+      }
+
+      footer {
+        height: 4.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="favicon.png" alt="Firmen Logo der AXA Winterthur" id="brand" />
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Produkte</a>
+          </li>
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <main>
+        Körper
+      </main>
+      <aside>
+        Seitenbar
+      </aside>
+    </div>
+    <footer>
+      Fuss
+    </footer>
+  </body>
+
+</html>
