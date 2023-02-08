@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, main, footer {
+    overflow: auto;
+    padding: 0 10px;
+}
+
+header {
+    /* source https://commons.wikimedia.org/wiki/File:D%C3%B6ner_Kebab_in_Istanbul.jpg */
+    background-image: url('abakebabra.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul, footer ul {
+    display: flex;
+    list-style: none;;
+}
+
+header li {
+    text-align: center;
+}
+
+header li a {
+    background-color: red;
+    display: block;
+    color: #fff;
+    font-size: 1.2em;
+    width: 144px;
+}
+
+main {
+    background-color: #eee;
+    flex-grow: 1;
+}
+
+h1 span {
+    display: block;
+    font-size: 0.8em;
+}
